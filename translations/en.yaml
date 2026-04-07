@@ -2,14 +2,15 @@ configuration:
   puid:
     name: User ID (PUID)
     description: >-
-      The user ID the Calibre process runs as. Match this to your Home Assistant
-      user or the owner of your library files to avoid permission issues.
-      Run `id` in a terminal to find your UID.
+      The user ID the Calibre process runs as. Default 1000 works for most
+      Home Assistant OS installs. If you have the SSH & Web Terminal add-on,
+      run `id` to confirm your UID.
   pgid:
     name: Group ID (PGID)
     description: >-
-      The group ID the Calibre process runs as. Should match the group that owns
-      your library files. Run `id` in a terminal to find your GID.
+      The group ID the Calibre process runs as. Default 1000 works for most
+      Home Assistant OS installs. If you have the SSH & Web Terminal add-on,
+      run `id` to confirm your GID.
   timezone:
     name: Timezone
     description: >-

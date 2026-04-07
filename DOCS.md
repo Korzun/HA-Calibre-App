@@ -7,7 +7,7 @@ Access the full Calibre desktop GUI through your browser via the web UI link on 
 ## First-time setup
 
 1. Set your **Timezone** to your local tz (e.g. `America/Chicago`).
-2. Set **PUID** / **PGID** to match the user that owns your e-book files (run `id` in a terminal to check). Default `1000` works for most setups.
+2. Set **PUID** / **PGID** to match the user that owns your e-book files. Default `1000` works for most Home Assistant OS setups. If you have the SSH & Web Terminal add-on, you can run `id` to confirm.
 3. Optionally set a **GUI Password** to protect the interface.
 4. Start the add-on and open the Web UI.
 5. On first launch, Calibre will ask you where your library lives. Point it to `/share/Calibre Library` (or any path under `/share`) so your books are stored in the Home Assistant `share` folder and accessible to other add-ons.

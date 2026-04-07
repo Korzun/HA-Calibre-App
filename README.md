@@ -15,8 +15,8 @@ Access the full Calibre desktop GUI through your browser directly from the Home 
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `puid` | `1000` | User ID the process runs as. Run `id` to find yours. |
-| `pgid` | `1000` | Group ID the process runs as. |
+| `puid` | `1000` | User ID the process runs as. Default works for most HA OS installs. |
+| `pgid` | `1000` | Group ID the process runs as. Default works for most HA OS installs. |
 | `timezone` | `America/Chicago` | Timezone in tz database format (e.g. `Europe/London`). |
 | `password` | *(empty)* | Optional password to protect the GUI. |
 
