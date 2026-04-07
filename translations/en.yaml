@@ -1,0 +1,22 @@
+configuration:
+  puid:
+    name: User ID (PUID)
+    description: >-
+      The user ID the Calibre process runs as. Match this to your Home Assistant
+      user or the owner of your library files to avoid permission issues.
+      Run `id` in a terminal to find your UID.
+  pgid:
+    name: Group ID (PGID)
+    description: >-
+      The group ID the Calibre process runs as. Should match the group that owns
+      your library files. Run `id` in a terminal to find your GID.
+  timezone:
+    name: Timezone
+    description: >-
+      Your local timezone in tz database format (e.g. America/Chicago,
+      Europe/London, Asia/Tokyo). Used for correct timestamps in the Calibre GUI.
+  password:
+    name: GUI Password
+    description: >-
+      Optional password to protect the Calibre desktop GUI. Leave empty for
+      no authentication. For internet-exposed setups use a reverse proxy instead.

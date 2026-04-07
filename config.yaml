@@ -1,0 +1,32 @@
+name: Calibre
+version: "1.0.0"
+slug: calibre
+description: Calibre e-book management system with web-based GUI, powered by LinuxServer.io
+url: "https://calibre-ebook.com"
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: application
+boot: manual
+ports:
+  8080/tcp: 8080
+  8181/tcp: 8181
+  8081/tcp: null
+ports_description:
+  8080/tcp: Desktop GUI (HTTP)
+  8181/tcp: Desktop GUI (HTTPS)
+  8081/tcp: "Calibre content server (enable in Calibre Preferences > Sharing > Content server)"
+map:
+  - share:rw
+options:
+  puid: 1000
+  pgid: 1000
+  timezone: "America/Chicago"
+  password: ""
+schema:
+  puid: int
+  pgid: int
+  timezone: str
+  password: str
+webui: "http://[HOST]:[PORT:8080]"
